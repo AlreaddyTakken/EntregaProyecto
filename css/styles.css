@@ -16,6 +16,7 @@
 * {
 	margin: 0;
 	padding: 0;
+    box-sizing: border-box;
 }
 
 .contenedor-icono{
@@ -60,13 +61,19 @@ h1{
     font-size: 1.25rem;
 }
 
+.menu a:hover{
+    background-color: white;
+    color: black;
+    border-radius: .75rem;
+    padding: .125rem;
+}
+
 /* --Hero image o fondo con texto-- */
 /* Hero index */
 .hero{
-    background-image: url(../Assets/imagenes/imagenes/hero-img1.jpg);
+    background-image: url(../assets/imagenes/imagenes/hero-img1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 12.5rem;
     position: relative;
     height: 53rem;
 }
@@ -100,7 +107,7 @@ h1{
 
 /*Hero Calendar*/
 .hero-calendar{
-    background-image: url(../Assets/imagenes/imagenes/bahrein.jpg);
+    background-image: url(../assets/imagenes/imagenes/bahrein.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 12.5rem;
@@ -133,7 +140,7 @@ h1{
 
 /*Hero Drivers*/
 .hero-drivers{
-    background-image: url(../Assets/imagenes/imagenes/getting-down-and-dirty-with-rb19.jpg);
+    background-image: url(../assets/imagenes/imagenes/getting-down-and-dirty-with-rb19.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 12.5rem;
@@ -166,7 +173,7 @@ h1{
 
 /*Hero Info*/
 .hero-info{
-    background-image: url(../Assets/imagenes/imagenes/hitting-the-pits.jpg);
+    background-image: url(../assets/imagenes/imagenes/hitting-the-pits.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 12.5rem;
@@ -199,7 +206,7 @@ h1{
 
 /*Hero Merch*/
 .hero-products{
-    background-image: url(../Assets/imagenes/imagenes/productos/hero-store.webp);
+    background-image: url(../assets/imagenes/imagenes/productos/hero-store.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -410,7 +417,7 @@ h1{
 }
 /*Fotos paisajes pistas*/
 .next-races .foto-pista1{
-    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)),url(../Assets/imagenes/imagenes/pistas/fotos-pistas/jeddah-circuit-changes-2023.jpg);
+    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)),url(../assets/imagenes/imagenes/pistas/fotos-pistas/jeddah-circuit-changes-2023.jpg);
     background-repeat: no-repeat;
     background-size: 31.25rem 16rem;
     height: 15.625rem;
@@ -418,7 +425,7 @@ h1{
 }
 
 .next-races .foto-pista2{
-    background-image:linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)), url(../Assets/imagenes/imagenes/pistas/fotos-pistas/austria.jpg);
+    background-image:linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)), url(../assets/imagenes/imagenes/pistas/fotos-pistas/austria.jpg);
     background-repeat: no-repeat;
     background-size: 31.25rem 16rem;
     height: 15.625rem;
@@ -426,7 +433,7 @@ h1{
 }
 
 .next-races .foto-pista3{
-    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)), url(../Assets/imagenes/imagenes/pistas/fotos-pistas/japon.jpeg);
+    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)), url(../assets/imagenes/imagenes/pistas/fotos-pistas/japon.jpeg);
     background-repeat: no-repeat;
     background-size: 31.25rem 16rem;
     height: 15.625rem;
@@ -434,7 +441,7 @@ h1{
 }
 
 .next-races .foto-pista4{
-    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)), url(../Assets/imagenes/imagenes/pistas/fotos-pistas/china.jpg);
+    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)), url(../assets/imagenes/imagenes/pistas/fotos-pistas/china.jpg);
     background-repeat: no-repeat;
     background-size: 31.25rem 16rem;
     height: 15.625rem;
@@ -442,7 +449,7 @@ h1{
 }
 
 .next-races .foto-pista5{
-    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)),url(../Assets/imagenes/imagenes/pistas/fotos-pistas/miami.jpg);
+    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)),url(../assets/imagenes/imagenes/pistas/fotos-pistas/miami.jpg);
     background-repeat: no-repeat;
     background-size: 31.25rem 16rem;
     height: 15.625rem;
@@ -450,7 +457,7 @@ h1{
 }
 
 .next-races .foto-pista6{
-    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)),url(../Assets/imagenes/imagenes/pistas/fotos-pistas/emilia\ romana.jpg);
+    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)),url(../assets/imagenes/imagenes/pistas/fotos-pistas/emilia\ romana.jpg);
     background-repeat: no-repeat;
     background-size: 31.25rem 16rem;
     height: 15.625rem;
@@ -538,6 +545,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .contenedor-index-info .relevant-info{
     height: 300px;
@@ -552,6 +560,10 @@ h1{
     padding-bottom: .9375rem;
 }
 
+.auxiliar{
+    display: flex;
+}
+
 .rb19{
     color: var(--claro);
     text-transform: uppercase;
@@ -559,6 +571,7 @@ h1{
     font-style: italic;
     font-size: 2.5rem;
     width: 50rem;
+    padding-left: 30px;
 }
 
 .rb19 img{
@@ -606,4 +619,112 @@ h1{
 }
 /* footer */
 
+/**Media Queries**/
+@media (max-width:1440px){
 
+}
+
+@media (max-width: 1024px){
+    /*Se ajusta la posision de la hero image*/
+    .hero{ 
+        background-position: 30%;
+    }
+    /*Se ajusta la posision de la hero image*/
+    /*modificamos el tamaño del vehículo*/
+    .rb19{ 
+        width: 25rem;;
+    }
+    /*modificamos el tamaño del vehículo*/
+    /*modificamos el contenedor de estadísticas*/
+    .stadistics{ 
+        width: 15.625rem;
+        height: 15.625rem;
+    }
+
+    .stadistics p{
+        font-size: 1.25rem;
+        padding-top: .75rem;
+        font-weight: bold;
+    }
+    /*modificamos el contenedor de estadísticas*/
+}
+
+@media (max-width: 768px){
+    /**se modifica tamaño de la img hero**/
+    .hero{
+        height: 26.5rem;
+    }
+    /**se modifica tamaño de la img hero**/
+    /**se modifica tamaño del titulo y posicion de éste**/
+    .content-hero h1{
+        font-size: 80px;
+        margin-bottom: 5rem;
+    }
+    /**se modifica tamaño del titulo y posicion de éste**/
+    /**se modifica tamaño del imagen logo y navegacion**/
+    .logo{
+        width: 12.5rem;
+    }
+
+    .logo img{
+        width: 10rem;
+    }
+
+    .menu a{
+        font-size: 1.125rem;
+    }
+    /**se modifica tamaño del imagen logo y navegacion**/
+}
+@media (max-width: 425px){
+    /**se modifica tamaño de la img hero y posicion**/
+    .hero{
+        width: 100%;
+        background-position: 40%;
+    }
+    /**se modifica tamaño de la img hero y posicion**/
+    /**se modifica tamaño del imagen logo y navegacion**/
+    .content-hero h1{
+        font-size: 50px;
+        margin-bottom: 5rem;
+    }
+
+    .menu a{
+        font-size: 10px;
+    }
+    /**se modifica tamaño del imagen logo y navegacion**/
+    /**se modifica la direccion del contenedor auxiliar que contiene infirmacion del vehículo y se modifica texto de las estadisticas**/
+    .auxiliar{
+        flex-direction: column;
+    }
+    
+    .stadistics{
+        padding-top: .5rem;
+    }
+    /**se modifica la direccion del contenedor auxiliar que contiene infirmacion del vehículo y se modifica texto de las estadisticas**/
+
+    .menu a{ /**********TEMPORAAAAAAL**********/
+        display: none;
+    }
+}
+
+@media (max-width: 320px){
+    /* se modifica el tamaño de la imagen para menor medidas */
+    .rb19{
+        width: 100%;
+    }
+    /* se modifica el tamaño de la imagen para menor medidas */
+    /* se da un espaciado con el footer para mejor visibilidad */
+    .stadistics{
+        margin-bottom: 20px;
+    }
+    /* se da un espaciado con el footer para mejor visibilidad */
+    /* se reduce el espacio del texto importante y se aumenta el tamaño de los iconos */
+    footer div p{
+        font-size: 10px;
+    }
+    .iconos span{
+        font-size: 40px;
+    }
+    /* se reduce el espacio del texto importante y se aumenta el tamaño de los iconos */
+}
+/**--Media Queries--**/
