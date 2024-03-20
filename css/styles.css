@@ -1,0 +1,609 @@
+:root{
+    /*Colores*/
+    --gris: #B1B0B0;
+    --grisTransparente: #b1b0b0c0;
+    --claro: #FEFEFE;
+    --azulOscuro: #00162B;
+    --azulClaro: #043461;
+    --azulMedio: #0C2034;
+    --amarillo: #E9BD2E;
+    --negro: #020100;
+    /*tamaño fuente*/
+    --titulo: 2.5rem;
+    --texto: 1.5625rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.contenedor-icono{
+    height: 2.8125rem;
+    width: 2.8125rem;
+}
+/* Globales*/
+body{
+    /* background-color: black; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer{
+    color: var(--gris);
+    font-size: 1.5625rem;
+}
+
+h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--claro);
+}
+/* Globales*/
+
+/* Menu navegacion */
+.content-hero .menu{
+    background-color: var(--azulClaro);
+    border-radius: .9375rem;
+    height: 2.5rem;
+    grid-column: 2 /span 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: .9375rem;
+}
+.menu a{
+    text-decoration: none;
+    color: var(--claro);
+    font-size: medium;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+/* --Hero image o fondo con texto-- */
+/* Hero index */
+.hero{
+    background-image: url(../Assets/imagenes/imagenes/hero-img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12.5rem;
+    position: relative;
+    height: 53rem;
+}
+
+.hero .content-hero{
+    position: absolute;
+    background-color: rgb(0 0 0 / 60%);
+    height: 100%;
+    width: 100%;
+    /*posicionamiento*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.content-hero a img{
+    padding-top: .9375rem;
+    padding-left: .9375rem;
+}
+
+.hero header{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    font-size: 3.75rem;
+    text-align: center;
+}
+
+.hero .menu{
+    width: 100%;
+}
+
+/*Hero Calendar*/
+.hero-calendar{
+    background-image: url(../Assets/imagenes/imagenes/bahrein.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12.5rem;
+    position: relative;
+    height: 53rem;
+}
+
+.hero-calendar .content-hero{
+    position: absolute;
+    background-color: rgb(0 0 0 / 60%);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    grid-template-rows: auto;
+}
+
+.hero-calendar header{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    font-size: 3.75rem;
+    text-align: center;
+}
+
+.hero-calendar .menu{
+    width: 100%;
+}
+/*Hero Calendar*/
+
+/*Hero Drivers*/
+.hero-drivers{
+    background-image: url(../Assets/imagenes/imagenes/getting-down-and-dirty-with-rb19.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12.5rem;
+    position: relative;
+    height: 31.25rem;
+}
+
+.hero-drivers .content-hero{
+    position: absolute;
+    background-color: rgb(0 0 0 / 60%);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    grid-template-rows: auto;
+}
+
+.hero-drivers header{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    font-size: 3.75rem;
+    text-align: center;
+}
+
+.hero-drivers .menu{
+    width: 100%;
+}
+/*Hero Drivers*/
+
+/*Hero Info*/
+.hero-info{
+    background-image: url(../Assets/imagenes/imagenes/hitting-the-pits.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12.5rem;
+    position: relative;
+    height: 31.25rem;
+}
+
+.hero-info .content-hero{
+    position: absolute;
+    background-color: rgb(0 0 0 / 60%);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    grid-template-rows: auto;
+}
+
+.hero-info header{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    font-size: 3.75rem;
+    text-align: center;
+}
+
+.hero-info .menu{
+    width: 100%;
+}
+/*Hero Drivers*/
+
+/*Hero Merch*/
+.hero-products{
+    background-image: url(../Assets/imagenes/imagenes/productos/hero-store.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12.5rem;
+    position: relative;
+    height: 31.25rem;
+}
+
+.hero-products .content-hero{
+    position: absolute;
+    background-color: rgb(0 0 0 / 60%);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    grid-template-rows: auto;
+}
+
+.hero-products header{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    font-size: 3.75rem;
+    text-align: center;
+}
+
+.hero-products h2{
+    color: var(--claro);
+    grid-column: span 3;
+    grid-row: 3;
+    font-size: 3.75rem;
+    text-align: center;
+}
+
+.hero-products .menu{
+    width: 100%;
+}
+/*Hero Merch*/
+
+/* gradientes main */
+.index-gradient{
+    background-image: linear-gradient(to top, var(--azulClaro) 0%, #0A0B0E 40%);
+}
+
+.calendar-gradient{
+    background-image: linear-gradient(to top, var(--azulClaro) 0%, var(--negro) 40%);
+}
+
+.drivers-gradient{
+    background-image: linear-gradient(to top, var(--azulMedio) 0%, var(--azulOscuro) 100%);
+}
+
+.info-gradient{
+    background-image: linear-gradient(to top, var(--azulMedio) 0%, var(--azulOscuro) 100%);
+}
+
+.products-gradient{
+    background-image: linear-gradient(to top, var(--azulMedio) 0%, #0A0602 100%);
+}
+/* gradientes main */
+
+/* drivers distribution */
+.grid-drivers{
+    /*posicionamiento*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-drivers .texto{
+    grid-column: 2 / 3;
+    background-color: var(--grisTransparente);
+    border-radius: .9375rem;
+    height: 18.75rem;
+    width: 31.25rem;
+    padding: .9375rem;
+    font-weight: 600;
+    font-size: 700;
+    /*sombreado contenedor*/
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.grid-drivers .side-car{
+    grid-row: 1 / 3;
+    grid-column: 3 / 3;
+}
+
+.grid-drivers .side-car img{
+    height: 40%;
+    width: 40%;
+}
+/* drivers distribution */
+
+/*info distribution*/
+.grid-info{
+    /*posicionamiento*/
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 8rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-info .text-info{
+    border-radius: .9375rem;
+    height: auto;
+    width: 31.25rem;
+    margin: 1rem;
+    font-weight: 600;
+    font-size: 1.0625rem;
+    color: var(--gris);
+}
+.content-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-info h2{
+    grid-column: span 3;
+    color: var(--claro);
+    font-size: 4.0625rem;
+}
+
+.imagen-side-R img{
+    width: 120%;
+}
+
+.imagen-side-L img{
+    width: 85%;
+}
+/*info distribution*/
+
+/* Products Distribution */
+.content-products h3{
+    text-align: center;
+    color: var(--claro);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos-contenido{
+    height: 43.75rem;
+    width: 25rem;
+    text-align: center;
+}
+
+.productos-contenido img{
+    height: 25rem;
+    width: 18.75rem;
+    border-radius: .9375rem;
+}
+
+.productos-contenido h4{
+    color: var(--claro);
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
+}
+
+.productos-contenido p{
+    color: var(--claro);
+    font-size:medium;
+    text-align: left;
+}
+
+.productos-contenido ul{
+    color: var(--claro);
+    font-size:medium;
+    text-align: left;
+    list-style: none;
+    padding-left: 2rem;
+}
+/* Products Distribution */
+
+/* Next Races */
+.next-races{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.innfo-carrera p{
+    color: var(--claro);
+}
+
+.contenedor-carrera{
+    height: 25rem;
+    width: 31.25rem;
+    text-align: center;
+    background-color: var(--gris);
+    border-radius: .9375rem;
+    margin: 3.75rem;
+    justify-content: space-around;
+}
+/*Fotos paisajes pistas*/
+.next-races .foto-pista1{
+    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)),url(../Assets/imagenes/imagenes/pistas/fotos-pistas/jeddah-circuit-changes-2023.jpg);
+    background-repeat: no-repeat;
+    background-size: 31.25rem 16rem;
+    height: 15.625rem;
+    border-radius: .9375rem;
+}
+
+.next-races .foto-pista2{
+    background-image:linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)), url(../Assets/imagenes/imagenes/pistas/fotos-pistas/austria.jpg);
+    background-repeat: no-repeat;
+    background-size: 31.25rem 16rem;
+    height: 15.625rem;
+    border-radius: .9375rem;
+}
+
+.next-races .foto-pista3{
+    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)), url(../Assets/imagenes/imagenes/pistas/fotos-pistas/japon.jpeg);
+    background-repeat: no-repeat;
+    background-size: 31.25rem 16rem;
+    height: 15.625rem;
+    border-radius: .9375rem;
+}
+
+.next-races .foto-pista4{
+    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)), url(../Assets/imagenes/imagenes/pistas/fotos-pistas/china.jpg);
+    background-repeat: no-repeat;
+    background-size: 31.25rem 16rem;
+    height: 15.625rem;
+    border-radius: .9375rem;
+}
+
+.next-races .foto-pista5{
+    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)),url(../Assets/imagenes/imagenes/pistas/fotos-pistas/miami.jpg);
+    background-repeat: no-repeat;
+    background-size: 31.25rem 16rem;
+    height: 15.625rem;
+    border-radius: .9375rem;
+}
+
+.next-races .foto-pista6{
+    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.5), rgba(0 ,0 ,0 ,0.5)),url(../Assets/imagenes/imagenes/pistas/fotos-pistas/emilia\ romana.jpg);
+    background-repeat: no-repeat;
+    background-size: 31.25rem 16rem;
+    height: 15.625rem;
+    border-radius: .9375rem;
+}
+/*Fotos paisajes pistas*/
+.next-races .contenedor-carrera .foto-pista1 img{
+    margin-top: 1.25rem;
+    width: 80%; 
+    height: 80%;
+}
+.next-races .contenedor-carrera .foto-pista2 img{
+    margin-top: 1.25rem;
+    width: 80%; 
+    height: 80%;
+}
+.next-races .contenedor-carrera .foto-pista3 img{
+    margin-top: 1.25rem;
+    width: 80%; 
+    height: 80%;
+}
+.next-races .contenedor-carrera .foto-pista4 img{
+    margin-top: 1.25rem;
+    width: 80%; 
+    height: 80%;
+}
+.next-races .contenedor-carrera .foto-pista5 img{
+    margin-top: 1.25rem;
+    width: 80%; 
+    height: 80%;
+}
+.next-races .contenedor-carrera .foto-pista6 img{
+    margin-top: 1.25rem;
+    width: 80%; 
+    height: 80%;
+}
+
+.detalle-carrera h4{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+
+.detalle-carrera p{
+    font-weight: 600;
+    text-transform: capitalize;
+}
+/* Next Races */
+
+/* Info carrera */
+.contenedor-icono{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.info-carrera{
+    color: var(--claro);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info-carrera .relevant-info img{
+    height: 3.75rem;
+    padding-bottom: .9375rem;
+}
+
+.info-carrera .relevant-info{
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.titulo-separador{
+    color: var(--claro);
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 2.5rem;
+    font-style: italic;
+}
+/* Info carrera */
+
+/* info index */
+
+.contenedor-index-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedor-index-info .relevant-info{
+    height: 300px;
+    width: 18.75rem;
+    color: var(--claro);
+    text-align: center;
+    padding: 1.875rem;
+}
+
+.contenedor-index-info .relevant-info img{
+    height: 3.75rem;
+    padding-bottom: .9375rem;
+}
+
+.rb19{
+    color: var(--claro);
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    font-size: 2.5rem;
+    width: 50rem;
+}
+
+.rb19 img{
+    width: 100%;
+}
+
+.stadistics{
+    color: var(--claro);
+    background-color: var(--gris);
+    text-align: center;
+    align-self: center;
+    padding-top: 1.875rem;
+    border-radius: .9375rem;
+    width: 18.75rem;
+    height: 18.75rem;
+    box-shadow: -0.3125rem .625rem rgba(0, 0, 0, 0.349);
+}
+.stadistics p{
+    font-size: 1.625rem;
+    padding-top: .75rem;
+    font-style: italic;
+}
+
+.stadistics .material-symbols-outlined{
+    color: var(--claro);
+}
+/* info index */
+
+/**Modificadores imagenes**/
+.contenedor-rb{
+    text-align: center;
+}
+.contenedor-rb img{
+    width: 60%;
+}
+/**Modificadores imagenes**/
+
+/* footer */
+.contact-icons{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-drivers{
+    background-color: var(--azulMedio);
+}
+/* footer */
+
+
