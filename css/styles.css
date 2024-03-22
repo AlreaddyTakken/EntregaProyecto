@@ -337,8 +337,9 @@ h1{
     margin: 1rem;
     font-weight: 600;
     font-size: 1.0625rem;
-    color: var(--gris);
+    color: var(--gris)!important;
 }
+
 .content-info{
     display: flex;
     flex-direction: column;
