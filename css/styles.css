@@ -636,6 +636,9 @@ h1{
     .hero{ 
         background-position: 30%;
     }
+    .hero-products{
+        background-position: 66%;
+    }
     /*Se ajusta la posision de la hero image*/
     /*modificamos el tamaño del vehículo*/
     .rb19{ 
@@ -661,6 +664,10 @@ h1{
     .hero{
         height: 26.5rem;
     }
+    .hero-products{
+        height: 26.5rem;
+        background-position: 71%;
+    }
     /**se modifica tamaño de la img hero**/
     /**se modifica tamaño del titulo y posicion de éste**/
     .content-hero h1{
@@ -668,15 +675,34 @@ h1{
         margin-bottom: 5rem;
     }
     /**se modifica tamaño del titulo y posicion de éste**/
+    /* Modificadores de los productos para medidas menores */
+    .productos-contenido{
+    height: 21.875rem;
+    width: 12.5rem;
+    text-align: center;
+    }
+
+    .productos-contenido h4{
+        font-size: 20px;
+    }
+
+    .productos-contenido img{
+        height: 12.5rem;
+        width: 9.375rem;
+        border-radius: .9375rem;
+    }
+
+    .productos-contenido ul{
+        display: none;
+    }
+    /* Modificadores de los productos para medidas menores */
     /**se modifica tamaño del imagen logo y navegacion**/
     .logo{
         width: 12.5rem;
     }
-
     .logo img{
         width: 10rem;
     }
-
     .menu a{
         font-size: 1.125rem;
     }
@@ -688,17 +714,30 @@ h1{
         width: 100%;
         background-position: 40%;
     }
+    .hero-products{
+        width: 100%;
+        background-position: 76%;
+    }
     /**se modifica tamaño de la img hero y posicion**/
+    /* modificador para  los titulos y espaciado */
+    .hero-products h1{
+        padding-top: 4.375rem;
+        margin: 0px 0px 40px;
+    }
+    .hero-products h2{
+        font-size: 2.5rem;
+    }
+    /* modificador para  los titulos y espaciado */
     /**se modifica tamaño del imagen logo y navegacion**/
     .content-hero h1{
         font-size: 50px;
         margin-bottom: 5rem;
     }
-
-    .menu a{
-        font-size: 10px;
+    .content-hero a{
+        display: none;
     }
     /**se modifica tamaño del imagen logo y navegacion**/
+
     /**se modifica la direccion del contenedor auxiliar que contiene infirmacion del vehículo y se modifica texto de las estadisticas**/
     .auxiliar{
         flex-direction: column;
@@ -748,6 +787,14 @@ h1{
 }
 
 @media (max-width: 320px){
+
+    .hero-products .content-hero h2{
+        font-size: 1.875rem;
+    }
+    .content-products h3{
+        font-size: 1.875rem;
+    }
+
     /* se modifica el tamaño de la imagen para menor medidas */
     .rb19{
         width: 100%;
