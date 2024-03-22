@@ -11,6 +11,7 @@
     /*tamaño fuente*/
     --titulo: 2.5rem;
     --texto: 1.5625rem;
+    --fuente: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 * {
@@ -701,10 +702,42 @@ h1{
         padding-top: .5rem;
     }
     /**se modifica la direccion del contenedor auxiliar que contiene infirmacion del vehículo y se modifica texto de las estadisticas**/
-
-    .menu a{ /**********TEMPORAAAAAAL**********/
+    /* oculta el menu original para reemplazarlo por el de bootstrap */
+    .content-hero .menu{
         display: none;
     }
+    /* oculta el menu original para reemplazarlo por el de bootstrap */
+    /* se agrega distancia entre contenedores para estetica     */
+    .relevant-info{
+        margin-bottom: 1.875rem;
+    }
+    /* se agrega distancia entre contenedores para estetica */
+    /* se modifica el espaciado entre parrafos para tamaños menores */
+    .stadistics p{
+        padding: 1px;
+    }
+    /* se modifica el espaciado entre parrafos para tamaños menores */
+
+    /* modificaciones al menu de bootstrap */
+    .navbar{
+        background-color: var(--azulClaro);
+    }
+    .nav-link{
+        color: var(--claro);
+        font-family: var(--fuente);
+    }
+    .nav-item:hover{
+        background-color: var(--claro);
+        color: var(--negro);
+        border-radius: .5rem;
+    }
+    .navbar-toggler-icon{
+        filter: invert(1);
+    }
+    .navbar-toggler{
+        border: var(--bs-border-width) solid var(--negro);
+    }
+    /* modificaciones al menu de bootstrap */
 }
 
 @media (max-width: 320px){
@@ -728,3 +761,4 @@ h1{
     /* se reduce el espacio del texto importante y se aumenta el tamaño de los iconos */
 }
 /**--Media Queries--**/
+
