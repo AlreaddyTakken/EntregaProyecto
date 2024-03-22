@@ -290,15 +290,21 @@ h1{
     grid-column: 2 / 3;
     background-color: var(--grisTransparente);
     border-radius: .9375rem;
-    height: 18.75rem;
-    width: 31.25rem;
-    padding: .9375rem;
+    height: 80%;
+    width: 100%;
     font-weight: 600;
-    font-size: 700;
     /*sombreado contenedor*/
     box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
     padding: 3rem;
     border-radius: 1rem;
+}
+
+.grid-drivers sect1{
+    grid-row: 1 / 2;
+}
+
+.grid-drivers sect2{
+    grid-row: 2 / 3;
 }
 
 .grid-drivers .side-car{
