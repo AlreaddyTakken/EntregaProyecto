@@ -743,6 +743,9 @@ h1{
     .content-hero a{
         display: none;
     }
+    .navbar{
+        display: blo;
+    }
     /**se modifica tamaño del imagen logo y navegacion**/
 
     /**se modifica la direccion del contenedor auxiliar que contiene infirmacion del vehículo y se modifica texto de las estadisticas**/
